@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/6b6ab91597.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <input
+          type="search"
+          placeholder="Please Enter Your City"
+          autocorrect="on"
+          id="search-city"
+        />
+        <button type="submit" id="submit-city">
+          <i
+            class="fa-solid fa-magnifying-glass magnify"
+            style="color: #975a5e"
+          ></i>
+        </button>
+      </form>
+      <br />
+
+      <h1>How's The Weather?</h1>
+      <h3 id="display-message">Weather in <span id="user-city">Toyko</span></h3>
+      <h5 id="date-and-time">Monday, 6:56</h5>
+      <br />
+      <i class="fa-solid fa-cloud-sun weatherApp" style="color: #975a5e"></i>
+      <h1 id="current-temperature">13° C</h1>
+    </div>
+    <button id="current-location">Weather for your location!</button>
+    <br />
+    <button class="cAndF">C/F</button>
+    <script src="src/actions.js"></script>
+  </body>
+</html>
